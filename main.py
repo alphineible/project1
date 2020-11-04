@@ -1,24 +1,52 @@
-#Rock,Paper,Scissors
+#Jempol,Telunjuk,Kelingking
 from random import randint
-t=["Alvin","Defri","Adrian","Refki","Ananda","Friska"]
-acak=t[randint(0,5)]
-print(acak)
-anak= False
-while anak== False:
-    anak = input("Anak ke ")
-    if acak=="Alvin" and anak=="5":
-        print(True)
-    elif acak=="Ananda" and anak=="6":
-        print(True)
-    elif acak=="Defri" and anak=="1":
-        print(True)
-    elif acak=="Friska" and anak=="4":
-        print(True)
-    elif acak=="Refki" and anak=="3":
-        print(True)
-    elif acak=="Adrian" and anak=="2":
-        print(True)
+t=["Jempol","Telunjuk","Kelingking"]
+acak=t[randint(0,2)]
+print("Masukkan Jari")
+jari= False
+while jari== False:
+    jari = input("")
+    if acak=="Jempol" :
+        if jari=="Jempol":
+            print('x')
+            print(acak)
+            print("Hahaha Seri")
+        elif jari=="Telunjuk":
+            print('x')
+            print(acak)            
+            print("Maaf:(, kamu Kalah")
+        elif jari=="Kelingking":
+            print('x')
+            print(acak)            
+            print("Yeay, kamu Menang!")
+    elif acak=="Telunjuk" :
+        if jari=="Jempol":
+            print('x')
+            print(acak)
+            print("Yeay, kamu Menang!")
+        elif jari=="Telunjuk":
+            print('x')
+            print(acak)            
+            print("Hahaha Seri")
+        elif jari=="Kelingking":
+            print('x')
+            print(acak)            
+            print("Maaf:(, kamu Kalah")
+    elif acak=="Kelingking" :
+        if jari=="Telunjuk":
+            print('x')
+            print(acak)            
+            print("Yeay, kamu Menang!")
+        elif jari=="Kelingking":
+            print('x')
+            print(acak)
+            print("Hahaha Seri")
+        elif jari=="Jempol":
+            print('x')
+            print(acak)
+            print("Maaf:(, kamu Kalah")
     else : print(False)
-    anak= False
-    acak=t[randint(0,5)]
-    print(acak)
+    jari= False
+    acak=t[randint(0,2)]
+    print("__________")
+    print("Masukkan Jari")
